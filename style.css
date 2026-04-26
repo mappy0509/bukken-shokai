@@ -88,6 +88,37 @@ body {
   margin-top: 2px;
 }
 
+/* ===== Offer Banner ===== */
+.offer-banner {
+  background: linear-gradient(90deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
+  border-bottom: 1px solid #f59e0b;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+.offer-banner-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.offer-icon {
+  font-size: 22px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+}
+.offer-text { display: flex; flex-direction: column; gap: 1px; }
+.offer-text strong {
+  font-size: 13px;
+  font-weight: 800;
+  color: #78350f;
+  letter-spacing: 0.02em;
+}
+.offer-text small {
+  font-size: 10.5px;
+  color: #92400e;
+  font-weight: 500;
+}
+
 /* ===== Tabs ===== */
 .tabs {
   position: sticky;
@@ -388,6 +419,188 @@ body {
   border-radius: 6px;
   border: 1px solid #fcd34d;
   display: inline-block;
+}
+
+/* ===== Quote Card (お見積り) ===== */
+details.card.quote {
+  background: linear-gradient(180deg, #fafbff 0%, #ffffff 70%);
+  border-color: #c7d2fe;
+}
+details.card.quote > summary {
+  color: #312e81;
+}
+
+/* Commission Discount Row */
+tr.commission {
+  background: linear-gradient(90deg, #ecfdf5 0%, #d1fae5 50%, #ecfdf5 100%);
+  position: relative;
+}
+tr.commission th {
+  color: #064e3b !important;
+  font-weight: 700 !important;
+}
+tr.commission td {
+  padding: 12px 0 !important;
+}
+.strike {
+  display: inline-block;
+  text-decoration: line-through;
+  color: #94a3b8;
+  font-size: 12.5px;
+  margin-right: 6px;
+  font-weight: 500;
+}
+.strike-sm {
+  display: inline-block;
+  text-decoration: line-through;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 500;
+}
+.discount {
+  display: inline-block;
+  color: #15803d;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  font-family: "Inter", sans-serif;
+  vertical-align: middle;
+}
+.discount-tag {
+  display: inline-block !important;
+  margin-top: 4px !important;
+  background: #15803d;
+  color: #fff !important;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+}
+
+table.compare tbody tr.row-commission {
+  background: linear-gradient(90deg, #ecfdf5, #d1fae5, #ecfdf5);
+}
+table.compare tbody tr.row-commission th {
+  background: #d1fae5;
+  color: #064e3b;
+}
+table.compare tbody tr.row-commission th small {
+  display: block;
+  font-size: 9px;
+  font-weight: 500;
+  color: #15803d;
+}
+table.compare tbody tr.row-commission td {
+  font-size: 13px;
+  line-height: 1.3;
+}
+table.compare tbody tr.row-commission td b {
+  font-size: 16px;
+}
+
+/* Quote disclaimer note */
+.quote-note {
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: #475569;
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 3px solid #94a3b8;
+  margin-top: 10px;
+}
+.quote-note b {
+  color: #1a202c;
+  font-weight: 700;
+}
+.quote-note + .quote-note { margin-top: 6px; }
+
+/* Promo card on compare slide */
+.card.promo-card {
+  background: linear-gradient(180deg, #fef3c7 0%, #fffbeb 100%);
+  border: 1px solid #f59e0b;
+  position: relative;
+}
+.card.promo-card h3 {
+  color: #78350f;
+  font-size: 16px;
+}
+.promo-text {
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #1a202c;
+}
+.promo-saving {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.ps-item {
+  background: #fff;
+  border: 1px solid #fcd34d;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+.ps-item span:first-child {
+  font-size: 11px;
+  font-weight: 700;
+  color: #78350f;
+  letter-spacing: 0.02em;
+}
+.ps-item .strike {
+  font-size: 11px;
+  margin: 0;
+}
+.ps-item b {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #15803d;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* Disclaimer card */
+.card.disclaimer-card {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+.card.disclaimer-card h3 {
+  color: #334155;
+}
+.disclaimer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.disclaimer-list li {
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #334155;
+  padding: 8px 12px 8px 28px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+.disclaimer-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  color: #64748b;
+  font-weight: 700;
+}
+.disclaimer-list li b {
+  color: #1a202c;
+  font-weight: 700;
 }
 
 /* ===== Lists ===== */
