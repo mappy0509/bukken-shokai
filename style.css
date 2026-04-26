@@ -126,6 +126,9 @@ body {
   z-index: 40;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+.tabs.tabs-3 {
+  grid-template-columns: repeat(3, 1fr);
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
@@ -746,6 +749,21 @@ table.compare {
   border-collapse: separate;
   border-spacing: 0;
   font-size: 12px;
+}
+table.compare.compare-2 {
+  min-width: 0;
+  font-size: 13px;
+}
+table.compare.compare-2 thead th { font-size: 13px; padding: 12px 8px; }
+table.compare.compare-2 tbody th { font-size: 12px; }
+table.compare.compare-2 tbody td { padding: 12px 8px; font-size: 13px; }
+table.compare.compare-2 tbody td b { font-size: 14px; }
+.promo-saving.promo-saving-2 { grid-template-columns: 1fr; }
+.promo-saving.promo-saving-2 .ps-item {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 table.compare thead th {
   background: #f8fafc;
